@@ -141,7 +141,7 @@ class Screenshots:
         img_path = os.path.join(self.dirpath,book_id, '')
         #set chromedriver options and load it
         chrome_options = Options()
-        chrome_options.add_argument("user-data-dir=selenium") 
+        chrome_options.add_argument("user-data-dir=C:\environments\selenium") 
         chrome_options.add_argument("--start-fullscreen")
         self.driver = webdriver.Chrome(chrome_options=chrome_options)
         self.wait = WebDriverWait(self.driver,100)
